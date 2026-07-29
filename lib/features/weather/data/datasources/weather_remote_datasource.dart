@@ -22,7 +22,7 @@ class WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource {
 
   @override
   Future<WeatherModel> getWeather(String city) async {
-    if (_apiKey.isEmpty) throw const ServerException();
+    if (_apiKey.trim().isEmpty) throw const MissingApiKeyException();
 
     try {
       final response = await _client.get<Map<String, dynamic>>(

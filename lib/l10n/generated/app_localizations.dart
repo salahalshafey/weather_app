@@ -182,6 +182,18 @@ abstract class AppLocalizations {
   /// **'Arabic'**
   String get arabic;
 
+  /// No description provided for @missingApiKey.
+  ///
+  /// In en, this message translates to:
+  /// **'WeatherAPI key is missing. Please restart the app using this command:'**
+  String get missingApiKey;
+
+  /// No description provided for @apiKeyRunCommand.
+  ///
+  /// In en, this message translates to:
+  /// **'flutter run --dart-define=WEATHER_API_KEY=your_key_here'**
+  String get apiKeyRunCommand;
+
   /// No description provided for @cityNotFound.
   ///
   /// In en, this message translates to:

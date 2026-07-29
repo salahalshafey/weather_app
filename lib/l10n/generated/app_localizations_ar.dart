@@ -51,6 +51,14 @@ class AppLocalizationsAr extends AppLocalizations {
   String get arabic => 'العربية';
 
   @override
+  String get missingApiKey =>
+      'مفتاح WeatherAPI غير موجود. يُرجى إعادة تشغيل التطبيق باستخدام هذا الأمر:';
+
+  @override
+  String get apiKeyRunCommand =>
+      'flutter run --dart-define=WEATHER_API_KEY=your_key_here';
+
+  @override
   String get cityNotFound =>
       'لم يتم العثور على المدينة. تحقق من الكتابة وحاول مرة أخرى.';
 

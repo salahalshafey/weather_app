@@ -14,6 +14,8 @@
   "darkTheme": "داكن",
   "english": "الإنجليزية",
   "arabic": "العربية",
+  "missingApiKey": "مفتاح WeatherAPI غير موجود. يُرجى إعادة تشغيل التطبيق باستخدام هذا الأمر:",
+  "apiKeyRunCommand": "flutter run --dart-define=WEATHER_API_KEY=your_key_here",
   "cityNotFound": "لم يتم العثور على المدينة. تحقق من الكتابة وحاول مرة أخرى.",
   "noInternet": "لا يوجد اتصال بالإنترنت. يتم عرض آخر نتيجة محفوظة إن توفرت.",
   "offlineLastUpdated": "دون اتصال · آخر تحديث {date}",

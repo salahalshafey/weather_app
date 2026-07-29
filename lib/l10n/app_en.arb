@@ -14,6 +14,8 @@
   "darkTheme": "Dark",
   "english": "English",
   "arabic": "Arabic",
+  "missingApiKey": "WeatherAPI key is missing. Please restart the app using this command:",
+  "apiKeyRunCommand": "flutter run --dart-define=WEATHER_API_KEY=your_key_here",
   "cityNotFound": "City not found. Check the spelling and try again.",
   "noInternet": "No internet connection. Showing last saved result if available.",
   "offlineLastUpdated": "Offline · last updated {date}",

@@ -22,3 +22,8 @@ final class NetworkFailure extends Failure {
 final class CityNotFoundFailure extends Failure {
   const CityNotFoundFailure();
 }
+
+/// Represents a build that omitted the required WeatherAPI key.
+final class MissingApiKeyFailure extends Failure {
+  const MissingApiKeyFailure();
+}

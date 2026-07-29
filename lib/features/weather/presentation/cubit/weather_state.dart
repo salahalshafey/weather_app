@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 import '../../domain/entities/weather.dart';
 
 /// Semantic error categories mapped to localized text by the presentation.
-enum WeatherErrorKind { cityNotFound, network }
+enum WeatherErrorKind { cityNotFound, network, missingApiKey }
 
 /// Base state for the weather search workflow.
 sealed class WeatherState extends Equatable {

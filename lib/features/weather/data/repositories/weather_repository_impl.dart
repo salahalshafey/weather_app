@@ -35,6 +35,9 @@ class WeatherRepositoryImpl implements WeatherRepository {
         return Right(weather);
       } on CityNotFoundException {
         return const Left(CityNotFoundFailure());
+      } on MissingApiKeyException {
+        // Configuration errors must be visible instead of masked by cache.
+        return const Left(MissingApiKeyFailure());
       } on ServerException {
         return _cachedWeatherOrFailure();
       }

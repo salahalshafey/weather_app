@@ -17,16 +17,18 @@ class WeatherCubit extends Cubit<WeatherState> {
 
     emit(const WeatherLoading());
     final result = await _getWeather(GetWeatherParams(city: normalized));
-    result.fold(
-      (failure) => emit(
+    result.fold((failure) {
+      final kind = switch (failure) {
+        CityNotFoundFailure() => WeatherErrorKind.cityNotFound,
+        MissingApiKeyFailure() => WeatherErrorKind.missingApiKey,
+        _ => WeatherErrorKind.network,
+      };
+      emit(
         WeatherError(
-          message: failure is CityNotFoundFailure
-              ? WeatherErrorKind.cityNotFound
-              : WeatherErrorKind.network,
+          message: kind,
           isNetworkError: failure is NetworkFailure || failure is ServerFailure,
         ),
-      ),
-      (weather) => emit(WeatherLoaded(weather)),
-    );
+      );
+    }, (weather) => emit(WeatherLoaded(weather)));
   }
 }

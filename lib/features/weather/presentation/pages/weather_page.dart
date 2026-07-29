@@ -57,8 +57,8 @@ class WeatherPage extends StatelessWidget {
                         WeatherLoaded(:final weather) => WeatherCard(
                           weather: weather,
                         ),
-                        WeatherError(:final isNetworkError) => WeatherErrorView(
-                          isNetworkError: isNetworkError,
+                        WeatherError(:final message) => WeatherErrorView(
+                          errorKind: message,
                         ),
                       },
                     ),
