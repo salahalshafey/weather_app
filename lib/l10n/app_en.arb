@@ -1,0 +1,32 @@
+{
+  "@@locale": "en",
+  "appTitle": "Weather",
+  "cityLabel": "City",
+  "cityHint": "Enter a city name",
+  "search": "Search",
+  "loading": "Loading weather…",
+  "settings": "Settings",
+  "appearance": "Appearance",
+  "language": "Language",
+  "systemDefault": "System",
+  "deviceLanguage": "Use device language",
+  "lightTheme": "Light",
+  "darkTheme": "Dark",
+  "english": "English",
+  "arabic": "Arabic",
+  "cityNotFound": "City not found. Check the spelling and try again.",
+  "noInternet": "No internet connection. Showing last saved result if available.",
+  "offlineLastUpdated": "Offline · last updated {date}",
+  "@offlineLastUpdated": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "temperature": "{value} °C",
+  "@temperature": {
+    "description": "Temperature value and its Celsius unit",
+    "placeholders": {
+      "value": {"type": "String"}
+    }
+  }
+}

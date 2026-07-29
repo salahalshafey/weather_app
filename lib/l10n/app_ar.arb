@@ -1,0 +1,32 @@
+{
+  "@@locale": "ar",
+  "appTitle": "الطقس",
+  "cityLabel": "المدينة",
+  "cityHint": "أدخل اسم المدينة",
+  "search": "بحث",
+  "loading": "جارٍ تحميل الطقس…",
+  "settings": "الإعدادات",
+  "appearance": "المظهر",
+  "language": "اللغة",
+  "systemDefault": "النظام",
+  "deviceLanguage": "استخدام لغة الجهاز",
+  "lightTheme": "فاتح",
+  "darkTheme": "داكن",
+  "english": "الإنجليزية",
+  "arabic": "العربية",
+  "cityNotFound": "لم يتم العثور على المدينة. تحقق من الكتابة وحاول مرة أخرى.",
+  "noInternet": "لا يوجد اتصال بالإنترنت. يتم عرض آخر نتيجة محفوظة إن توفرت.",
+  "offlineLastUpdated": "دون اتصال · آخر تحديث {date}",
+  "@offlineLastUpdated": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "temperature": "{value} °م",
+  "@temperature": {
+    "description": "قيمة درجة الحرارة ووحدة القياس المئوية",
+    "placeholders": {
+      "value": {"type": "String"}
+    }
+  }
+}
